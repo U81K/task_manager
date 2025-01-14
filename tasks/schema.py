@@ -83,7 +83,7 @@ class CreateTaskMutation(graphene.Mutation):
             user=user,
             title=kwargs.get('title'),
             description=kwargs.get('description'),
-            completed=kwargs.get('completed', False),  # Default to False if not provided
+            completed=kwargs.get('completed', False),
             due_date=kwargs.get('due_date'),
             )
         return CreateTaskMutation(task=task)

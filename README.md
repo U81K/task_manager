@@ -2,13 +2,13 @@
 
 ## Prerequisites
 
-- Node.js (for React Native)
-- Python (for Django)
-- Expo CLI (if using Expo)
+- Node.js
+- Python
+- Expo CLI
 
 ## Setup Instructions
 
-### 1. Clone the Repository
+Clone the Repository
 
 
 #for the backend
@@ -23,74 +23,25 @@ pip install -r requirements.txt
 
 python manage.py runserver
 
-for frontend
+#for the frontend
 
 cd frontend/
 
 npm install
 
-Update the GraphQL endpoint in src/apolloClient.js
+Update the GraphQL endpoint in apolloClient.js
 
 npx expo start
 
 
+![Alt text](./screenShots/Login.png)
 
+![Alt text](./screenShots/Register.png)
 
-# to register a user 
-# mutation {
-#   registerUser(
-#     username: "newuser",
-#     password: "securepassword123"
-#   ) {
-#     user {
-#       id
-#       username
-#     }
-#     success
-#     errors
-#   }
-# }
+![Alt text](./screenShots/Home.png)
 
-# to login
-# mutation {
-#   tokenAuth(username: "newuser", password: "securepassword123") {
-#     token
-#   }
-# }
+![Alt text](./screenShots/CreateTask.png)
 
-# to logout 
-# clear the JWT token from storage in the front end
+![Alt text](./screenShots/tasksScreen.png)
 
-# to create a task 
-# mutation {
-#   createTask(title:"task2", description:"fdasklfjlkdasjf"){
-#     task {
-#       id
-    #   title
-    #   description
-    #   completed
-    #   dueDate
-    #   user {
-    #     username
-    #   }
-  #   }
-  # }
-  # }
-
-#delete a task 
-#   mutation {
-#   deleteTask(id: 2) {
-#     success
-#     message
-#   }
-# }
-
-# query {
-#   me {
-#     id
-#     username
-#     email
-#   }
-# }
-
-
+![Alt text](./screenShots/TaskScreen.png)
